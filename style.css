@@ -1,0 +1,76 @@
+/* style.css
+   The look of your document, on the web page AND on paper.
+   Start by changing the values just below. */
+
+:root {
+  --font-text: Georgia, serif;
+  --font-titles: Arial, sans-serif;
+  --text-size: 18px;
+  --line-height: 1.4;
+  --color-text: #222;
+  --color-links: orangered;
+  --color-lines: #ccc;
+  --space: 1em;
+  --space-small: 0.5em;
+  --web-width: 40em;
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: var(--text-size);
+  line-height: var(--line-height);
+  color: var(--color-text);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titles);
+}
+
+a {
+  color: var(--color-links);
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: var(--space-small);
+  border-bottom: 1px solid var(--color-lines);
+  text-align: left;
+}
+
+.cover {
+  text-align: center;
+}
+
+.toc a {
+  display: block;
+}
+
+.item {
+  border-top: 1px solid var(--color-lines);
+}
+
+.error {
+  color: red;
+}
+
+
+/* Only for the web page (screen) */
+@media screen {
+  body {
+    max-width: var(--web-width);
+    margin: 0 auto;
+    padding: var(--space);
+  }
+
+  .chapter {
+    border-top: 1px solid var(--color-lines);
+  }
+}
